@@ -25,7 +25,7 @@ const router: any = createBrowserRouter([
     // loader: appLoader,
     children: [
       {
-        path: '/home',
+        path: '/home/:aa?',
         element: <Home/>
       }
     ]
