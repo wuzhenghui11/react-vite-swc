@@ -14,7 +14,7 @@ const router: any = createBrowserRouter([
     element: <App/>,
     errorElement: <NotFound />,
     loader: async ({ request, params, context }) => {
-      console.log(request.url)
+      // console.log(request.url)
       // const aa = useMatch()
       // console.log(aa)
       if (request.url === 'http://localhost:5173/') {
@@ -33,7 +33,7 @@ const router: any = createBrowserRouter([
   {
     path: '/login',
     loader: async (test) => {
-      console.log(test)
+      // console.log(test)
       return {
         name: 'test'
       }
